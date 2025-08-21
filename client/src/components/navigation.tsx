@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'wouter';
-import { Search, BarChart3, Code, Filter, GraduationCap, Menu, X } from 'lucide-react';
+import { Search, BarChart3, Code, Filter, GraduationCap, Menu, X, Database } from 'lucide-react';
 
 export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,6 +25,10 @@ export function Navigation() {
               <Link href="/screeners" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
                 <Filter className="w-4 h-4 mr-2" />
                 Screeners
+              </Link>
+              <Link href="/market-data" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
+                <Database className="w-4 h-4 mr-2" />
+                NSE Data
               </Link>
               <Link href="/" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
                 <GraduationCap className="w-4 h-4 mr-2" />
@@ -75,6 +79,10 @@ export function Navigation() {
               <Link href="/screeners" className="text-white hover:text-accent transition-colors flex items-center">
                 <Filter className="w-4 h-4 mr-2" />
                 Screeners
+              </Link>
+              <Link href="/market-data" className="text-white hover:text-accent transition-colors flex items-center">
+                <Database className="w-4 h-4 mr-2" />
+                NSE Data
               </Link>
               <Link href="/" className="text-white hover:text-accent transition-colors flex items-center">
                 <GraduationCap className="w-4 h-4 mr-2" />

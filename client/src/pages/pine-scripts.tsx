@@ -260,11 +260,11 @@ export default function PineScriptsPage() {
               <h3 className="text-lg font-bold text-white mb-2">{script.name}</h3>
               <p className="text-gray-400 text-sm mb-4">{script.description}</p>
               
-              {/* Gen Z Explanation */}
-              <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 mb-4">
+              {/* Script Details */}
+              <div className="bg-darker/30 border border-gray-700 rounded-xl p-4 mb-4">
                 <div className="flex items-center mb-2">
                   <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                  <span className="text-xs text-accent font-medium uppercase tracking-wide">Gen Z Explanation</span>
+                  <span className="text-xs text-accent font-medium uppercase tracking-wide">Script Details</span>
                 </div>
                 <p className="text-sm text-gray-300">{script.genZExplanation}</p>
               </div>
