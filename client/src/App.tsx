@@ -5,11 +5,17 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import SimpleDashboard from "@/components/simple-dashboard";
+import ChartsPage from "@/pages/charts";
+import PineScriptsPage from "@/pages/pine-scripts";
+import ScreenersPage from "@/pages/screeners";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={SimpleDashboard} />
+      <Route path="/charts" component={ChartsPage} />
+      <Route path="/pine-scripts" component={PineScriptsPage} />
+      <Route path="/screeners" component={ScreenersPage} />
       <Route component={NotFound} />
     </Switch>
   );

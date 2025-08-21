@@ -14,21 +14,21 @@ export function Navigation() {
               MarketPulse
             </Link>
             <div className="hidden md:flex space-x-6 ml-8">
-              <Link href="#charts" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
+              <Link href="/charts" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
                 <BarChart3 className="w-4 h-4 mr-2" />
                 Charts
               </Link>
-              <Link href="#pine-scripts" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
+              <Link href="/pine-scripts" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
                 <Code className="w-4 h-4 mr-2" />
                 Pine Scripts
               </Link>
-              <Link href="#screeners" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
+              <Link href="/screeners" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
                 <Filter className="w-4 h-4 mr-2" />
                 Screeners
               </Link>
-              <Link href="#education" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
+              <Link href="/" className="text-white hover:text-accent transition-colors duration-300 flex items-center">
                 <GraduationCap className="w-4 h-4 mr-2" />
-                Education
+                Dashboard
               </Link>
             </div>
           </div>
@@ -64,21 +64,21 @@ export function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-white/20">
             <div className="flex flex-col space-y-4">
-              <Link href="#charts" className="text-white hover:text-accent transition-colors flex items-center">
+              <Link href="/charts" className="text-white hover:text-accent transition-colors flex items-center">
                 <BarChart3 className="w-4 h-4 mr-2" />
                 Charts
               </Link>
-              <Link href="#pine-scripts" className="text-white hover:text-accent transition-colors flex items-center">
+              <Link href="/pine-scripts" className="text-white hover:text-accent transition-colors flex items-center">
                 <Code className="w-4 h-4 mr-2" />
                 Pine Scripts
               </Link>
-              <Link href="#screeners" className="text-white hover:text-accent transition-colors flex items-center">
+              <Link href="/screeners" className="text-white hover:text-accent transition-colors flex items-center">
                 <Filter className="w-4 h-4 mr-2" />
                 Screeners
               </Link>
-              <Link href="#education" className="text-white hover:text-accent transition-colors flex items-center">
+              <Link href="/" className="text-white hover:text-accent transition-colors flex items-center">
                 <GraduationCap className="w-4 h-4 mr-2" />
-                Education
+                Dashboard
               </Link>
               <div className="pt-4">
                 <input 

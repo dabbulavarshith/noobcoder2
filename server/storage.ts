@@ -42,6 +42,21 @@ export class MemStorage implements IStorage {
     this.marketData = new Map();
     this.priceAlerts = new Map();
     this.seedMarketData();
+    this.startMarketDataUpdates();
+  }
+
+  private startMarketDataUpdates() {
+    // Generate subtle updates to simulate realistic market data
+    setInterval(() => {
+      this.marketData.forEach(item => {
+        const change = (Math.random() - 0.5) * 0.003; // ±0.15% max change for realistic movement
+        const oldPrice = item.price;
+        item.price *= (1 + change);
+        item.change = item.price - oldPrice;
+        item.changePercent = (item.change / oldPrice) * 100;
+        item.lastUpdated = new Date();
+      });
+    }, 15000); // Update every 15 seconds for less frequent fluctuations
   }
 
   private seedMarketData() {
